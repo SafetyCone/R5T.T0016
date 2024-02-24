@@ -10,7 +10,7 @@ namespace R5T.T0016
     {
         public string GetCopyrightText(string copyrightHolderName)
         {
-            var currentYear = Instances.NowOperator.GetCurrentYear();
+            var currentYear = Instances.NowOperator.Get_CurrentYear();
 
             var output = $"&copy; {currentYear} {copyrightHolderName}. All rights reserved.";
             return output;
